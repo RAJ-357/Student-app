@@ -1,6 +1,6 @@
 {
-    "name": "main_project",
-    "short_name": "main_project",
+    "name": "complete_project",
+    "short_name": "complete_project",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

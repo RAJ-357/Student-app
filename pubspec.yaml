@@ -1,4 +1,4 @@
-name: main_project
+name: complete_project
 description: A new Flutter project.
 
 # The following line prevents the package from being accidentally published to
@@ -35,6 +35,10 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
   flutter_timer_countdown: ^1.0.3
+  just_audio: ^0.9.24
+  table_calendar: ^3.0.0
+  google_fonts: ^3.0.1
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
