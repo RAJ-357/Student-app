@@ -3,8 +3,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_timer_countdown/flutter_timer_countdown.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:complete_project/screens/player.dart';
-import 'package:complete_project/events.dart';
+import 'package:WORKSPACE/screens/player.dart';
+import 'package:WORKSPACE/events.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:table_calendar/table_calendar.dart';
 
@@ -89,6 +89,7 @@ class _TodoListState extends State<TodoList> {
     return Scaffold(
       backgroundColor: const Color(0xFF1D1E32),
       appBar: AppBar(
+          automaticallyImplyLeading: false,
           backgroundColor : const Color(0xFF252A30),
           title: const Text("TO-DO List",style: TextStyle(color: Color(0xFFD5E4F7),fontSize: 25))
       ),
@@ -368,6 +369,7 @@ class _HomePageState extends State<HomePage> {
 
     return Scaffold(
         appBar: AppBar(
+          automaticallyImplyLeading: false,
           centerTitle: true,
           backgroundColor : const Color(0xFF252A30),
           title: const Text("WORKSPACE",style: TextStyle(fontWeight: FontWeight.bold,color: Color(0xFFD5E4F7),fontSize: 25)),
@@ -976,12 +978,11 @@ class _CalenderState extends State<Calender> {
                 color: Color(0xFF282828),
                 borderRadius: BorderRadius.all(Radius.circular(20))
             ),
-            height: 195,
             width: 475,
             child: Column(
                 //mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  const SizedBox(height:10),
+                  //const SizedBox(height:10),
                   ..._getEventsfromDay(selectedDay).map((Event event) => ListTile(leading: CircleAvatar(backgroundColor: const Color(0xFFD83457), child: Text(event.title[0].toUpperCase()),),title:Text(event.title,style: const TextStyle(color: Colors.orange,fontSize: 25)))),
               ],
             ),

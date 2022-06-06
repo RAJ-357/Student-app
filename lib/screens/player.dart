@@ -1,9 +1,9 @@
 import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:just_audio/just_audio.dart';
-import 'package:complete_project/domain/audio_metadata.dart';
-import 'package:complete_project/screens/commons/player_buttons.dart';
-import 'package:complete_project/screens/commons/palylist.dart';
+import 'package:WORKSPACE/domain/audio_metadata.dart';
+import 'package:WORKSPACE/screens/commons/player_buttons.dart';
+import 'package:WORKSPACE/screens/commons/palylist.dart';
 
 class Player extends StatefulWidget {
   const Player({Key? key}) : super(key: key);
